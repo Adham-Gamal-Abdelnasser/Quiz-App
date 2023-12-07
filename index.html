@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <!-- ! Website icon -->
+    <link rel="website icon" href="Assets/imgs/logo.png" type="png" />
+    <!-- ! Animate css Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- ! bootstrap  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- ! fontawesome -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- ! main css file -->
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+  <body>
+    <main class="min-vh-100 d-flex justify-content-center align-items-center">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="heading animate__animated animate__zoomInDown">
+          <h1 class="mb-0">Quiz App</h1>
+        </div>
+        <form
+          class="w-75 p-3 text-center animate__animated animate__zoomInUp animate__delay-1s"
+          id="quizSelection"
+        >
+          <div class="form-floating">
+            <select
+              class="form-select my-3"
+              id="categoryMenu"
+              aria-label="category Select"
+            >
+              <option selected="" value="">Any Category</option>
+              <option value="9">General Knowledge</option>
+              <option value="27">Animals</option>
+              <option value="18">Science: Computers</option>
+              <option value="19">Science: Mathematics</option>
+              <option value="20">Mythology</option>
+              <option value="21">Sports</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="24">Politics</option>
+              <option value="25">Art</option>
+            </select>
+            <label for="categoryMenu">Choose Category</label>
+          </div>
+          <div class="form-floating">
+            <select
+              class="form-select my-3"
+              id="levelMenu"
+              aria-label="difficulty Select"
+            >
+              <option value="easy" selected>Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+            <label for="levelMenu">Choose difficulty level</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="questionsNumber"
+              placeholder="Number of Questions"
+            />
+            <label for="questionsNumber">Number of Questions</label>
+          </div>
+          <button
+            type="button"
+            class="w-100 btn btn-outline-primary fw-bold text-white my-3"
+            id="startBtn"
+          >
+            Start
+          </button>
+          <div
+            class="social-links mt-3 my-3 d-flex align-items-start justify-content-center gap-3"
+          >
+            <span
+              class="rounded-circle d-flex justify-content-center align-items-center"
+              ><a
+                class="fab fa-facebook-f fa-lg text-decoration-none"
+                href="https://www.facebook.com/adham.gamal.9404/"
+              ></a
+            ></span>
+            <span
+              class="rounded-circle d-flex justify-content-center align-items-center"
+              ><a
+                class="fab fa-linkedin-in fa-lg text-decoration-none"
+                href="https://www.linkedin.com/in/adham-gamal-abdelnasser-%F0%9F%87%B5%F0%9F%87%B8-b47312225/"
+              ></a
+            ></span>
+            <span
+              class="rounded-circle d-flex justify-content-center align-items-center"
+              ><a
+                class="fab fa-github fa-lg text-decoration-none"
+                href="https://github.com/Adham-Gamal-Abdelnasser"
+              ></a
+            ></span>
+            <span
+              class="doma d-flex justify-content-center align-items-center rounded-circle mt-1"
+            >
+              <a
+                href="https://www.linkedin.com/in/adham-gamal-abdelnasser-%F0%9F%87%B5%F0%9F%87%B8-b47312225/"
+                class="douma d-flex justify-content-center align-items-center translate-middle-y"
+                ><img src="Assets/imgs/logo.png" class="w-100"
+              /></a>
+            </span>
+          </div>
+        </form>
+        <div
+          class="question-container d-none w-75 bg-white p-3 rounded-3 animate__animated animate__bounceIn"
+        >
+          <div
+            class="question d-flex flex-column justify-content-center align-items-center"
+            id="questionView"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <!-- ! bootstrap file -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- ! main operation file  -->
+    <script src="JS/index.js" type="module"></script>
+  </body>
+</html>
